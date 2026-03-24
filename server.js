@@ -158,6 +158,8 @@ const lifts = {
     }
 }
 
+app.use(express.static(__dirname))
+
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
 })
@@ -171,7 +173,7 @@ app.get('/api/:name',(req, res)=>{
     if (lifts[liftName]){
         res.json(lifts[liftName].Max)
     } else{
-        response.json(lifts['unknown'])
+        res.json(lifts['unknown'])
     }
 })
 
