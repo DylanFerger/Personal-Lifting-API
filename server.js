@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+const path = require('path')
 
+app.use(cors())
 const lifts = {
-    'slight incline db press': {
+    'slight-incline-db-press': {
         'Max': 0
     },
     'seated cable chest flyes': {
@@ -158,7 +161,7 @@ const lifts = {
     }
 }
 
-app.use(express.static(__dirname))
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
