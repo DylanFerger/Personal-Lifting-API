@@ -7,7 +7,7 @@ const path = require('path')
 app.use(cors())
 const lifts = {
     'slight-incline-db-press': {
-        'Max': 0
+        'Max': 1
     },
     'seated cable chest flyes': {
         'Max': 0
