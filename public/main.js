@@ -5,7 +5,7 @@ async function apiRequest(){
         const data = await res.json()
 
         console.log(data)
-        document.getElementsByClassName('SIDBP-Max').innerText = data
+        document.querySelector('.SIDBP-Max').innerText = data.Max
     }catch(error){
         console.log(error)
     }
