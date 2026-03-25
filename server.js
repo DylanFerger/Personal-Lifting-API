@@ -24,6 +24,9 @@ const lifts = {
     'lateral-raises-(db)': {
         'Max': 0
     },
+    'around-the-world-superman-hold': {
+        'Max': 0
+    },
     'single-arm-pulldown-(lats)': {
         'Max': 0
     },
