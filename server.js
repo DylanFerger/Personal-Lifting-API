@@ -18,9 +18,6 @@ const lifts = {
     'high-incline-db-press': {
         'Max': 0
     },
-    'tricep-pushdown': {
-        'Max': 0
-    },
     'lateral-raises-(db)': {
         'Max': 0
     },
@@ -115,9 +112,6 @@ const lifts = {
         'Max': 0
     },
     'db-shoulder-press': {
-        'Max': 0
-    },
-    'dip-machine': {
         'Max': 0
     },
     'chest-flye-machine': {
