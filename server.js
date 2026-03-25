@@ -9,151 +9,151 @@ const lifts = {
     'slight-incline-db-press': {
         'Max': 0
     },
-    'seated cable chest flyes': {
+    'seated-cable-chest-flyes': {
         'Max': 0
     },
-    'dip machine': {
+    'dip-machine': {
         'Max': 0
     },
-    'high incline db press': {
+    'high-incline-db-press': {
         'Max': 0
     },
-    'tricep pushdown': {
+    'tricep-pushdown': {
         'Max': 0
     },
-    'lateral raises (db)': {
+    'lateral-raises-(db)': {
         'Max': 0
     },
-    'single arm pulldown (lats)': {
+    'single-arm-pulldown-(lats)': {
         'Max': 0
     },
-    'single arm Ccble row': {
+    'single-arm-cable-row': {
         'Max': 0
     },
-    'wide grip pulldowns': {
+    'wide-grip-pulldowns': {
         'Max': 0
     },
-    'chest-supported upper back rows': {
+    'chest-supported-upper-back-rows': {
         'Max': 0
     },
-    'dumbbell shrug': {
+    'dumbbell-shrug': {
         'Max': 0
     },
-    'rear delt flye machine': {
+    'rear-delt-flye-machine': {
         'Max': 0
     },
-    'db standing curls': {
+    'db-standing-curls': {
         'Max': 0
     },
-    'db hammer curls': {
+    'db-hammer-curls': {
         'Max': 0
     },
-    'reverse grip ez bar curls': {
+    'reverse-grip-ez-bar-curls': {
         'Max': 0
     },
-    'ez bar wrist curls': {
+    'ez-bar-wrist-curls': {
         'Max': 0
     },
-    'reverse wrist curls': {
+    'reverse-wrist-curls': {
         'Max': 0
     },
-    'squat press': {
+    'squat-press': {
         'Max': 0
     },
-    'barbell rdl': {
+    'barbell-rdl': {
         'Max': 0
     },
-    'hip thrust': {
+    'hip-thrust': {
         'Max': 0
     },
-    'adductor machine': {
+    'adductor-machine': {
         'Max': 0
     },
-    'abduction machine': {
+    'abduction-machine': {
         'Max': 0
     },
-    'leg extensions': {
+    'leg-extensions': {
         'Max': 0
     },
-    'seated leg curls': {
+    'seated-leg-curls': {
         'Max': 0
     },
-    'preacher curl machine': {
+    'preacher-curl-machine': {
         'Max': 0
     },
-    'tricep pushdown': {
+    'tricep-pushdown': {
         'Max': 0
     },
-    'concentration curls': {
+    'concentration-curls': {
         'Max': 0
     },
-    'jm press (smith)': {
+    'jm-press-(smith)': {
         'Max': 0
     },
-    'db hammer curls': {
+    'db-hammer-curls': {
         'Max': 0
     },
-    'tricep overhead extensions (cable)': {
+    'tricep-overhead-extensions-(cable)': {
         'Max': 0
     },
-    'straight leg calf raise machine': {
+    'straight-leg-calf-raise-machine': {
         'Max': 0
     },
-    'tibialis anterior raise': {
+    'tibialis-anterior-raise': {
         'Max': 0
     },
-    'seated calf raise': {
+    'seated-calf-raise': {
         'Max': 0
     },
-    'incline press machine': {
+    'incline-press-machine': {
         'Max': 0
     },
-    'decline press machine': {
+    'decline-press-machine': {
         'Max': 0
     },
-    'db shoulder press': {
+    'db-shoulder-press': {
         'Max': 0
     },
-    'dip machine': {
+    'dip-machine': {
         'Max': 0
     },
-    'chest flye machine': {
+    'chest-flye-machine': {
         'Max': 0
     },
-    'cable lateral raises': {
+    'cable-lateral-raises': {
         'Max': 0
     },
-    'pulldown machine (supinated grip)': {
+    'pulldown-machine-(supinated-grip)': {
         'Max': 0
     },
-    'chest-supported lat row': {
+    'chest-supported-lat-row': {
         'Max': 0
     },
-    'chest-supported t-bar rows (upper back)': {
+    'chest-supported-t-bar-rows-(upper-back)': {
         'Max': 0
     },
-    'straight arm pulldowns (cable)': {
+    'straight-arm-pulldowns-(cable)': {
         'Max': 0
     },
-    'bent over rear delt flyes': {
+    'bent-over-rear-delt-flyes': {
         'Max': 0
     },
-    'walked-out cable curls': {
+    'walked-out-cable-curls': {
         'Max': 0
     },
-    'pendulum squat (quad version)': {
+    'pendulum-squat-(quad-version)': {
         'Max': 0
     },
-    'db rdl': {
+    'db-rdl': {
         'Max': 0
     },
-    'laying leg curl': {
+    'laying-leg-curl': {
         'Max': 0
     },
     'hyperextension': {
         'Max': 0
     },
-    'incline db curls': {
+    'incline-db-curls': {
         'Max': 0
     },
     'unknown': {
