@@ -41,6 +41,22 @@ header {
     padding-left: 5%;
 }
 
+ul{
+    margin: 0 auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 4rem;
+    color: white;
+
+}
+
+a:hover{
+    
+}
+
 h1{
     margin: 0;
     font-size: 5rem;

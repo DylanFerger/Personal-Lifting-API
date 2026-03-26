@@ -164,6 +164,38 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/day1', (req, res)=>{
+    res.sendFile(__dirname + '/day1.html')
+})
+
+app.get('/day2', (req, res)=>{
+    res.sendFile(__dirname + '/day2.html')
+})
+
+app.get('/day3', (req, res)=>{
+    res.sendFile(__dirname + '/day3.html')
+})
+
+app.get('/day4', (req, res)=>{
+    res.sendFile(__dirname + '/day4.html')
+})
+
+app.get('/day5', (req, res)=>{
+    res.sendFile(__dirname + '/day5.html')
+})
+
+app.get('/day6', (req, res)=>{
+    res.sendFile(__dirname + '/day6.html')
+})
+
+app.get('/day7', (req, res)=>{
+    res.sendFile(__dirname + '/day7.html')
+})
+
+app.get('/day8', (req, res)=>{
+    res.sendFile(__dirname + '/day8.html')
+})
+
 app.get('/api', (req, res)=> {
     res.json(lifts)
 })
