@@ -53,14 +53,11 @@ a{
     text-decoration: none;
     font-size: 3rem;
     color: white;
-    margin-top: 0.5rem;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.2s ease-in-out;
+    margin-top: 0.75rem;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover{
-    transform-origin: bottom left;
     transform: scale(1.2);
 }
 
