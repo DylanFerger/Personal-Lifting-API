@@ -164,35 +164,35 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/day1', (req, res)=>{
+app.get('/day1.html', (req, res)=>{
     res.sendFile(__dirname + '/day1.html')
 })
 
-app.get('/day2', (req, res)=>{
+app.get('/day2.html', (req, res)=>{
     res.sendFile(__dirname + '/day2.html')
 })
 
-app.get('/day3', (req, res)=>{
+app.get('/day3.html', (req, res)=>{
     res.sendFile(__dirname + '/day3.html')
 })
 
-app.get('/day4', (req, res)=>{
+app.get('/day4.html', (req, res)=>{
     res.sendFile(__dirname + '/day4.html')
 })
 
-app.get('/day5', (req, res)=>{
+app.get('/day5.html', (req, res)=>{
     res.sendFile(__dirname + '/day5.html')
 })
 
-app.get('/day6', (req, res)=>{
+app.get('/day6.html', (req, res)=>{
     res.sendFile(__dirname + '/day6.html')
 })
 
-app.get('/day7', (req, res)=>{
+app.get('/day7.html', (req, res)=>{
     res.sendFile(__dirname + '/day7.html')
 })
 
-app.get('/day8', (req, res)=>{
+app.get('/day8.html', (req, res)=>{
     res.sendFile(__dirname + '/day8.html')
 })
 

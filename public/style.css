@@ -41,20 +41,27 @@ header {
     padding-left: 5%;
 }
 
-ul{
-    margin: 0 auto;
+.center{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 a{
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
-
+    margin-top: 0.5rem;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-in-out;
 }
 
 a:hover{
-    
+    transform-origin: bottom left;
+    transform: scale(1.2);
 }
 
 h1{
