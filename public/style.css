@@ -57,7 +57,7 @@ a{
 
 li{
     margin-top: .25rem;
-    transition: all 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 li:hover{
