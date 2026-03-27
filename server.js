@@ -200,14 +200,14 @@ app.get('/api', (req, res)=> {
     res.json(lifts)
 })
 
-app.get('/api/:name',(req, res)=>{
-    const liftName = req.params.name.toLowerCase()
-    if (lifts[liftName]){
-        res.json(lifts[liftName].Max)
-    } else{
-        res.json(lifts['unknown'])
-    }
-})
+// app.get('/api/:name',(req, res)=>{
+//     const liftName = req.params.name.toLowerCase()
+//     if (lifts[liftName]){
+//         res.json(lifts[liftName].Max)
+//     } else{
+//         res.json(lifts['unknown'])
+//     }
+// })
 
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is now running on port ${PORT}!`)
