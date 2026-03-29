@@ -183,7 +183,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
-    console.log(db.collection('lifts'))
+    db.colletion('lifts').find()
+    .then(data => {
+        console.log(res)
+    })
+    .catch(error => console.log(error))
 })
 
 app.get('/day1.html', (req, res)=>{
