@@ -12,7 +12,7 @@ app.use(cors())
 
 MongoClient.connect(uri)
   .then(client => {
-    dbConnection = client.db('lifting-app-db') // IMPORTANT
+    dbConnection = client.db('lifting-app') // IMPORTANT
     app.listen(PORT, () => {
       console.log('Server running')
     })
