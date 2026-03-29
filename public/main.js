@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', apiRequest)
 
 async function apiRequest() {
     try {
-        const res = await fetch('https://personal-lifting-api.onrender.com/api')
+        const res = await fetch('https://personal-lifting-api.onrender.com/api/lifts')
         const data = await res.json()
 
         Object.entries(liftsMap).forEach(([className, apiKey]) => {
