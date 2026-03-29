@@ -20,7 +20,7 @@ MongoClient.connect(uri)
   .catch(err => console.log(err))
 
 app.get('/api', (req, res) => {
-    dbConnection.collection('lifts').find().toArray()
+    db.collection('lifts').find().toArray()
     .then(data => res.json(data))
     .catch(err => {
         console.log(err)
