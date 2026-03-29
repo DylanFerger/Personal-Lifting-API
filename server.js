@@ -20,7 +20,11 @@ MongoClient.connect(uri)
   .catch(err => console.log(err))
 
 app.get('/api', (req, res) => {
-    db.collection('lifts').find().toArray()
+    if (!dbConnection) {
+        return res.status(500).send('DB not connected yet')
+    }
+
+    dbConnection.collection('lifts').find().toArray()
     .then(data => res.json(data))
     .catch(err => {
         console.log(err)
