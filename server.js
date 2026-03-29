@@ -3,7 +3,10 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 const path = require('path')
-const uri = 'mongodb+srv://liftingApp:password123!@lifting-app-db.o3bapio.mongodb.net/?appName=lifting-app-db'
+const { MongoClient } = require('mongodb')
+
+let dbConnection
+let uri = 'mongodb+srv://liftingApp:password123!@lifting-app-db.o3bapio.mongodb.net/?appName=lifting-app-db'
 
 app.use(cors())
 const lifts = {
