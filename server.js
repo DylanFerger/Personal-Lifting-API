@@ -43,7 +43,7 @@ app.get('/api/lifts', async (req, res) => {
 
         liftsArray.forEach(doc => {
             Object.entries(doc).forEach(([key, value]) => {
-                if (key == '_id') {
+                if (key !== '_id') {
                     liftObj[key] = value
                 }
             })
