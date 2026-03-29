@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 const path = require('path')
+const uri = 'mongodb+srv://liftingApp:password123!@lifting-app-db.o3bapio.mongodb.net/?appName=lifting-app-db'
 
 app.use(cors())
 const lifts = {
@@ -158,6 +159,21 @@ const lifts = {
     }
 }
 
+module.exports = {
+    connectToDb: (uri) => {
+        MongoClient.connect(db)
+        .then((client) => {
+            dbConnection = client.db()
+            return cb()
+        })
+        .catch(err => {
+            console.log(err)
+            return cb(err)
+        })
+    },
+    getDb: () => dbConnection
+}
+
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
@@ -200,15 +216,5 @@ app.get('/api', (req, res)=> {
     res.json(lifts)
 })
 
-// app.get('/api/:name',(req, res)=>{
-//     const liftName = req.params.name.toLowerCase()
-//     if (lifts[liftName]){
-//         res.json(lifts[liftName].Max)
-//     } else{
-//         res.json(lifts['unknown'])
-//     }
-// })
-
 app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`The server is now running on port ${PORT}!`)
 })
