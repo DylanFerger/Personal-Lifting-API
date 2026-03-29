@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = 8000
+const PORT = process .env || 8000
 const path = require('path')
 const { MongoClient } = require('mongodb')
 
