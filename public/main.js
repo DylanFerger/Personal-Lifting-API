@@ -74,6 +74,8 @@ async function apiRequest() {
         const res = await fetch('https://personal-lifting-api.onrender.com/api')
         const data = await res.json()
 
+        const dataObj = data[0]
+
         Object.entries(liftsMap).forEach(([className, apiKey]) => {
             const elements = document.querySelectorAll(`.${className}`)
 
