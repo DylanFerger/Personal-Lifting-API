@@ -39,17 +39,17 @@ app.get('/api/lifts', async (req, res) => {
         }
         const liftsArray = await dbConnection.collection('lifts').find().toArray()
 
-        const liftsObj = {}
+        // const liftsObj = {}
 
-        liftsArray.forEach(doc => {
-            Object.entries(doc).forEach(([key, value]) => {
-                if (key !== '_id') {
-                    liftObj[key] = value
-                }
-            })
-        })
+        // liftsArray.forEach(doc => {
+        //     Object.entries(doc).forEach(([key, value]) => {
+        //         if (key !== '_id') {
+        //             liftObj[key] = value
+        //         }
+        //     })
+        // })
 
-        res.json(liftsObj)
+        res.json(liftsArray)
     } catch (err) {
         console.error(err)
         res.status(500).send('Error fetching data')
