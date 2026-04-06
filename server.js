@@ -32,30 +32,6 @@ app.get('/api', (req, res) => {
     })
 })
 
-app.get('/api/lifts', async (req, res) => {
-    try{
-        if (!dbConnection) {
-            return res.status(500).send('DB not connected yet')
-        }
-        const liftsArray = await dbConnection.collection('lifts').find().toArray()
-
-        // const liftsObj = {}
-
-        // liftsArray.forEach(doc => {
-        //     Object.entries(doc).forEach(([key, value]) => {
-        //         if (key !== '_id') {
-        //             liftObj[key] = value
-        //         }
-        //     })
-        // })
-
-        res.json(liftsArray)
-    } catch (err) {
-        console.error(err)
-        res.status(500).send('Error fetching data')
-    }
-})
-
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
