@@ -79,7 +79,11 @@ async function apiRequest() {
         Object.entries(liftsMap).forEach(([className, apiKey]) => {
             const elements = document.querySelectorAll(`.${className}`)
 
-            console.log('Checking:', apiKey, dataObj[apiKey])
+            console.log('---')
+    console.log('Class:', className)
+    console.log('API Key:', apiKey)
+    console.log('Elements found:', elements.length)
+    console.log('Data value:', dataObj[apiKey])
 
             if (elements.length > 0 && data[apiKey]) {
                 elements.forEach(el => {
