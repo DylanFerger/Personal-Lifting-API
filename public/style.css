@@ -150,6 +150,8 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 button{
