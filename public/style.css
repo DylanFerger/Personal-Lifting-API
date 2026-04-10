@@ -146,6 +146,16 @@ section{
     border: 2px solid white;
 }
 
+.buttonCenter{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+button{
+    
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
