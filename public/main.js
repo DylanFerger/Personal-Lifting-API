@@ -90,3 +90,58 @@ async function apiRequest() {
         console.error('API error:', error)
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const form = document.getElementById('workout-form');
+
+    if (!form) return;
+
+    form.addEventListener('submit', handleSubmit);
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+
+        const lifts = document.querySelectorAll('#workout-form .workoutWrap');
+
+        const payload = {};
+
+        lifts.forEach(lift => {
+            const name = lift.dataset.lift;
+            if (!name) return;
+
+            const sets = [...lift.querySelectorAll('input')]
+                .map(i => Number(i.value))
+                .filter(n => !isNaN(n));
+
+            const newMax = sets.length ? Math.max(...sets) : 0;
+
+            payload[name] = {
+                sets,
+                newMax
+            };
+        });
+
+        if (!Object.keys(payload).length) {
+            console.log('No workout data entered');
+            return;
+        }
+
+        try {
+            const res = await fetch('https://personal-lifting-api.onrender.com/api/workout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const data = await res.json();
+            console.log('Workout saved:', data);
+
+        } catch (err) {
+            console.error('Save error:', err);
+        }
+    }
+
+});
