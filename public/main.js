@@ -145,3 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+document.getElementById("workout-form").onsubmit = function() {
+    location.reload(); 
+};
