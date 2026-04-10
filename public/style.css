@@ -147,11 +147,9 @@ section{
 }
 
 .buttonCenter{
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    margin: 3rem 0;
 }
 
 button{
