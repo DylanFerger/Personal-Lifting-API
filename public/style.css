@@ -124,7 +124,7 @@ section{
     width: 50%;
     margin: 0 1rem;
     padding: 1rem;
-    background-color: rgb(95, 94, 94);
+    background-color: rgb(103, 102, 102);
     border: 0px solid black;
     border-radius: 10px;
 }
@@ -150,6 +150,13 @@ section{
     display: grid;
     place-items: center;
     margin: 3rem 0;
+}
+
+button{
+    color: white;
+    background-color: rgb(103, 102, 102);
+    border: 0px solid black;
+    border-radius: 10px;
 }
 
 /******************************************
