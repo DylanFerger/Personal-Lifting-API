@@ -155,7 +155,7 @@ section{
 button{
     color: white;
     background-color: rgb(103, 102, 102);
-    border: 1px solid white;
+    border: 0px solid white;
     border-radius: 5px;
     padding: 1rem 2rem;
 }
