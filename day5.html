@@ -14,95 +14,110 @@
     </header>
     <section>
         <h2>Day 5 - Push Day B</h2>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>Bench Press</h3>
-                <h4>Max: <span class="SIDBP-Max"></span></h4>
-                <h4>Sets: 3</h4>
-                <h4>Reps: 7-15</h4>
-                <h4>Tempo: 3-1-0</h4>
+        <form id="workout-form">
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>Bench Press</h3>
+                    <h4>Max: <span class="SIDBP-Max"></span></h4>
+                    <h4>Sets: 3</h4>
+                    <h4>Reps: 7-15</h4>
+                    <h4>Tempo: 3-1-0</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="slight-incline-db-press">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                    </div>
+                </div>
             </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="SIDBP-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="SIDBP-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="SIDBP-Max"> lbs</h4>
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>Incline Press Machine</h3>
+                    <h4>Max: <span class="IPM-Max"></span></h4>
+                    <h4>Sets: 3</h4>
+                    <h4>Reps: 7-15</h4>
+                    <h4>Tempo: 3-1-0</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="incline-press-machine">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>Incline Press Machine</h3>
-                <h4>Max: <span class="IPM-Max"></span></h4>
-                <h4>Sets: 3</h4>
-                <h4>Reps: 7-15</h4>
-                <h4>Tempo: 3-1-0</h4>
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>DB Shoulder Press</h3>
+                    <h4>Max: <span class="DBSP-Max"></span></h4>
+                    <h4>Sets: 3</h4>
+                    <h4>Reps: 8-15</h4>
+                    <h4>Tempo: 3-1-0</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="db-shoulder-press">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                    </div>
+                </div>
             </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="DPM-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="DPM-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="DPM-Max"> lbs</h4>
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>Dip Machine</h3>
+                    <h4>Max: <span class="DM-Max"></span></h4>
+                    <h4>Sets: 3</h4>
+                    <h4>Reps: 8-15</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="dip-machine">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>DB Shoulder Press</h3>
-                <h4>Max: <span class="DBSP-Max"></span></h4>
-                <h4>Sets: 3</h4>
-                <h4>Reps: 8-15</h4>
-                <h4>Tempo: 3-1-0</h4>
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>Seated Cable Chest Flyes</h3>
+                    <h4>Max: <span class="SCCF-Max"></span></h4>
+                    <h4>Sets: 3</h4>
+                    <h4>Reps: 8-15</h4>
+                    <h4>Tempo: 3-1-0-1</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="seated-cable-chest-flyes">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                    </div>
+                </div>
             </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="DBSP-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="DBSP-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="DBSP-Max"> lbs</h4>
+            <div class="workoutWrapStyle">
+                <div class="liftInfo">
+                    <h3>Cable Lateral Raises</h3>
+                    <h4>Max: <span class="CLR-Max"></span></h4>
+                    <h4>Sets: 4</h4>
+                    <h4>Reps: 10-15</h4>
+                </div>
+                <div class="setInfo">
+                    <div class="workoutWrap" data-lift="cable-lateral-raises">
+                        <h3>Weights</h3>
+                        <h4>Set 1: <input type="number" name="1"> lbs</h4>
+                        <h4>Set 2: <input type="number" name="2"> lbs</h4>
+                        <h4>Set 3: <input type="number" name="3"> lbs</h4>
+                        <h4>Set 4: <input type="number" name="4"> lbs</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>Dip Machine</h3>
-                <h4>Max: <span class="DM-Max"></span></h4>
-                <h4>Sets: 3</h4>
-                <h4>Reps: 8-15</h4>
-            </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="DM-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="DM-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="DM-Max"> lbs</h4>
-            </div>
-        </div>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>Seated Cable Chest Flyes</h3>
-                <h4>Max: <span class="SCCF-Max"></span></h4>
-                <h4>Sets: 3</h4>
-                <h4>Reps: 8-15</h4>
-                <h4>Tempo: 3-1-0-1</h4>
-            </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="SCCF-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="SCCF-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="SCCF-Max"> lbs</h4>
-            </div>
-        </div>
-        <div class="workoutWrap">
-            <div class="liftInfo">
-                <h3>Cable Lateral Raises</h3>
-                <h4>Max: <span class="CLR-Max"></span></h4>
-                <h4>Sets: 4</h4>
-                <h4>Reps: 10-15</h4>
-            </div>
-            <div class="setInfo">
-                <h3>Weights</h3>
-                <h4>Set 1: <input type="text" name="CLR-Max"> lbs</h4>
-                <h4>Set 2: <input type="text" name="CLR-Max"> lbs</h4>
-                <h4>Set 3: <input type="text" name="CLR-Max"> lbs</h4>
-                <h4>Set 4: <input type="text" name="CLR-Max"> lbs</h4>
-            </div>
-        </div>
+            <div class="buttonCenter"><button type="submit">Save Workout</button></div>
+        </form>
     </section>
     <script src="main.js"></script>
 </body>
