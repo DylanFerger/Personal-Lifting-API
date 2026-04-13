@@ -79,6 +79,8 @@ app.post('/api/workout', async (req, res) => {
             updated: updateQuery
         });
 
+        location.reload()
+
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Server error' });
