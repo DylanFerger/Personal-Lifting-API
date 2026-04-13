@@ -79,7 +79,6 @@ app.post('/api/workout', async (req, res) => {
             updated: updateQuery
         });
 
-        location.reload()
 
     } catch (err) {
         console.error(err);
