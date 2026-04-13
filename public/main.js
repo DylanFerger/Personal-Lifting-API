@@ -146,10 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-form.addEventListener('submit', async function(e) {
-    e.preventDefault();
+document.getElementById("workout-form").onsubmit = function() {
 
-    await handleSubmit(e);
-
-    location.reload();
-});
+    
+    location.reload(); 
+};
