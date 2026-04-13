@@ -122,7 +122,3 @@ app.get('/day7.html', (req, res)=>{
 app.get('/day8.html', (req, res)=>{
     res.sendFile(__dirname + '/day8.html')
 })
-
-app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`Server running on port ${PORT}`)
-})
