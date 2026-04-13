@@ -79,6 +79,9 @@ app.post('/api/workout', async (req, res) => {
             updated: updateQuery
         });
 
+    console.log("🔥 REQUEST RECEIVED");
+    console.log("BODY:", req.body);
+
 
     } catch (err) {
         console.error(err);
@@ -123,8 +126,3 @@ app.get('/day7.html', (req, res)=>{
 app.get('/day8.html', (req, res)=>{
     res.sendFile(__dirname + '/day8.html')
 })
-
-app.post('/api/workout', async (req, res) => {
-    console.log("🔥 REQUEST RECEIVED");
-    console.log("BODY:", req.body);
-    })
