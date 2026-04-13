@@ -79,11 +79,11 @@ async function apiRequest() {
         Object.entries(liftsMap).forEach(([className, apiKey]) => {
             const elements = document.querySelectorAll(`.${className}`)
 
-            if (!elements.length) return 
-                
+            if (!elements.length) return
+
             elements.forEach(el => {
-                    el.innerText = dataObj[apiKey]?.Max ?? '--'
-                })
+                el.innerText = dataObj[apiKey]?.Max ?? '--'
+            })
         })
 
     } catch (error) {
@@ -91,57 +91,53 @@ async function apiRequest() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
 
-    const form = document.getElementById('workout-form');
+const form = document.getElementById('workout-form');
 
-    if (!form) return;
 
-    form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', handleSubmit);
 
-    async function handleSubmit(e) {
-        e.preventDefault();
+async function handleSubmit(e) {
+    e.preventDefault();
 
-        const lifts = document.querySelectorAll('#workout-form .workoutWrap');
+    const lifts = document.querySelectorAll('#workout-form .workoutWrap');
 
-        const payload = {};
+    const payload = {};
 
-        lifts.forEach(lift => {
-            const name = lift.dataset.lift;
-            if (!name) return;
+    lifts.forEach(lift => {
+        const name = lift.dataset.lift;
+        if (!name) return;
 
-            const sets = [...lift.querySelectorAll('input')]
-                .map(i => Number(i.value))
-                .filter(n => !isNaN(n));
+        const sets = [...lift.querySelectorAll('input')]
+            .map(i => Number(i.value))
+            .filter(n => !isNaN(n));
 
-            const newMax = sets.length ? Math.max(...sets) : 0;
+        const newMax = sets.length ? Math.max(...sets) : 0;
 
-            payload[name] = {
-                sets,
-                newMax
-            };
-        });
+        payload[name] = {
+            sets,
+            newMax
+        };
+    });
 
-        if (!Object.keys(payload).length) {
-            console.log('No workout data entered');
-            return;
-        }
-
-        try {
-            const res = await fetch('https://personal-lifting-api.onrender.com/api/workout', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload)
-            });
-
-            const data = await res.json();
-            console.log('Workout saved:', data);
-
-        } catch (err) {
-            console.error('Save error:', err);
-        }
+    if (!Object.keys(payload).length) {
+        console.log('No workout data entered');
+        return;
     }
 
-});
+    try {
+        const res = await fetch('https://personal-lifting-api.onrender.com/api/workout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        console.log('Workout saved:', data);
+
+    } catch (err) {
+        console.error('Save error:', err);
+    }
+};
