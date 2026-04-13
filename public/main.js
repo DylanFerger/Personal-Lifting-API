@@ -119,7 +119,7 @@ async function handleSubmit(e) {
             newMax
         };
 
-        // location.reload()
+        location.reload()
     });
 
     if (!Object.keys(payload).length) {

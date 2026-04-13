@@ -79,9 +79,6 @@ app.post('/api/workout', async (req, res) => {
             updated: updateQuery
         });
 
-    console.log("🔥 REQUEST RECEIVED");
-    console.log("BODY:", req.body);
-
 
     } catch (err) {
         console.error(err);
