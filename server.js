@@ -57,7 +57,6 @@ app.post('/api/workout', async (req, res) => {
 
             const newMax = data.newMax;
 
-            // 🔥 ONLY UPDATE IF HIGHER
             if (newMax > currentLift.Max) {
                 updateQuery[liftName] = {
                     Max: newMax

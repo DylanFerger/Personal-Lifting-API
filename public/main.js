@@ -118,8 +118,6 @@ async function handleSubmit(e) {
             sets,
             newMax
         };
-
-        location.reload()
     });
 
     if (!Object.keys(payload).length) {
@@ -138,7 +136,8 @@ async function handleSubmit(e) {
 
         const data = await res.json();
         console.log('Workout saved:', data);
-
+        location.reload()
+        
     } catch (err) {
         console.error('Save error:', err);
     }
